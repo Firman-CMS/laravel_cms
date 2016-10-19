@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: LaravelCms
+        psr4_prefix: LaravelCms
+        src_path: app
