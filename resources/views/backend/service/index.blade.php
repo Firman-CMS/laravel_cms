@@ -1,8 +1,8 @@
 @extends('backend.vbase')
 @section('title')
   <h1>
-    ABOUT US
-    <small>it all about us</small>
+    SERVICE
+    <small>it all service</small>
   </h1>
 @stop
 @section('content')
@@ -26,21 +26,32 @@
         <table class="table table-bordered table-hover">
           <thead>
           <tr>
-              <th>About Us</th>
+              <th>Service</th>
+              <th>Status</th>
+
               <th colspan="2" style="width:20px;">Actions</th>
           </tr>
           </thead>
           <tbody>
-             @foreach ($aboutus as $about)
+             @foreach ($service as $srvc)
+               <?php if ($srvc->status == 1){
+                 $class = 'info';
+                 $text  = 'aktif';
+                 $post  = 2;
+               }else if(($srvc->status == 2)){
+                 $class = 'danger';
+                 $text  = 'non aktif';
+                 $post  = 1;
+                }?>
+
+
                     <tr>
-                        <td>{{ $about->about_us }}</td>
-                        <td style="width:20px" ><a href="{{route('about.show',$about->id_about)}}" class="btn btn-mini btn-primary no-border">Read</a></td>
-                        <td style="width:20px" ><a href="{{route('about.edit',$about->id_about)}}" class="btn btn-mini btn-warning no-border">Update</a></td>
-                        {{-- <td style="width:20px" >
-                        {!! Form::open(['method' => 'DELETE', 'route'=>['about.destroy', $about->id_about]]) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn  btn-mini btn-danger no-border']) !!}
-                        {!! Form::close() !!}
-                        </td> --}}
+                        <td>{{ $srvc->service }}</td>
+                        <td style="width:20px" ><a href="{{ url('service/status/'.$srvc->id_service.'/'.$post)}}" class="btn btn-mini btn-{{ $class }} no-border">{{ $text }}</a></td>
+
+                        <td style="width:20px" ><a href="{{ url('service/show/'.$srvc->id_service)}}" class="btn btn-mini btn-primary no-border">Read</a></td>
+                        <td style="width:20px" ><a href="{{ url('service/edit/'.$srvc->id_service)}}" class="btn btn-mini btn-warning no-border">Update</a></td>
+
                     </tr>
                 @endforeach
         </tbody>
