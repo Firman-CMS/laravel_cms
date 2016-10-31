@@ -1,0 +1,281 @@
+/**********************************************
+
+Template Name:  Pride - One Page Personal vCard Portfolio
+Author: ThemeLabBD
+Version: 1.0
+Design and Developed by: ThemeLabBD
+
+NOTE: This is responsive stylesheet of the template, This file contains the styling for various devices like mobile phone, tablet, laptop etc.
+
+*************************************************/
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+.header-area .container{
+    width: 100%;
+}
+.main-menu ul.navbar-nav li a{
+    padding: 32px 6px;
+}
+.is-sticky .main-menu ul.navbar-nav li a{padding: 25px 6px;}
+.section-padding {
+  padding: 80px 0;
+}
+.about-author {
+  padding: 0 15px;
+  margin-top: 35px;
+}
+.portfolio-top h2 {
+    font-size: 30px;
+    letter-spacing: 0;
+    margin-top: 5px;
+}
+.single-services h3{
+    font-size: 18px;
+}
+.portfolio-menu ul {
+    margin: 0 0 0 -4px;
+}
+.portfolio-menu ul li {
+    margin-left: 4px;
+    padding: 6px;
+}
+    
+    
+    
+}
+/* Mobile Layout lower than: 320px. */
+@media only screen and (max-width: 767px) { 
+    
+h2.section-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+}
+
+    /* HEADER AREA */    
+.header-area{
+    padding: 12px 0;
+    transition: all 0.5s ease-in-out;
+}
+.logo a{
+    display: inline-block;
+    width: 60px;
+    margin-top: 0px;
+    transition: all 0.5s ease-in-out;
+}
+.main-menu ul.navbar-nav {
+    float: left;
+}
+.main-menu ul.navbar-nav li a{
+    padding: 7px 5px;
+}
+.main-menu ul.nav.navbar-nav li.active:before{
+    display: none;
+}
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  margin-top: 15px;
+}
+.sticky-wrapper{
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+.is-sticky .header-area{
+    padding: 8px 0;
+
+}
+.is-sticky .header-area:before{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.is-sticky .main-menu ul li a{
+   
+}
+.is-sticky .logo a {
+    margin-top: 0px;
+    width: 55px;
+}
+.is-sticky .main-menu ul.navbar-nav li a{padding: 10px 5px;}
+    .navbar-toggle {
+    float: none;
+    margin: 0;
+    border-color: #fff;
+    padding: 9px;
+    transition: all 0.5s ease-in-out;
+}
+    .navbar-toggle .icon-bar {
+  background: none repeat scroll 0 0 #fff;
+}
+    .navbar-header {
+  display: inline-block;
+  float: right;
+  margin-top: 2px;
+}
+    .is-sticky .navbar-toggle{
+        padding: 7px;
+    }
+.mobile-menu-activated ul.nav.navbar-nav{}
+.mobile-menu-activated ul.nav.navbar-nav li{display: block;text-align: left;}
+.mobile-menu-activated ul.nav.navbar-nav li a{padding: 7px 5px;}
+.main-menu ul.navbar-nav{
+    text-align: left !important;
+    display: block;
+}
+    
+    
+    
+/* WELCOME AREA */
+.welcome-text h1 {
+  font-size: 35px;
+    letter-spacing: 0px;
+}
+.welcome-text h1 span.wlc-color {
+    display: block;
+}
+.welcome-text #typer h2{
+    font-size: 25px;
+    }
+
+
+
+     
+  
+/* ABOUT SECTION */
+.author-image {
+    margin-bottom: 0px;
+}
+.section-padding{
+    padding:  40px 0px;
+}
+    .author-info {
+        margin: 35px 0;
+    }
+.author-info li {
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding-bottom: 3px;
+}
+.author-info span {
+  font-size: 16px;
+}
+    .about-author {
+  padding: 0 15px;
+}
+    .about-author > h4 {
+  font-size: 30px;
+  padding-bottom: 4px;
+}
+
+    
+/* SERVICES SECTION */
+h2.section-title {
+    font-size: 30px;
+}
+.single-services{
+    margin-bottom: 50px;
+}
+
+
+    
+/* RESUME SECTION */
+.resume-box .resume-icon {
+    float: none;
+    margin-bottom: 20px;
+}
+.resume-box .resume-icon ul {
+  list-style: outside none none;
+  padding: 22px 0;
+}
+
+.resume-box .resume-history {
+  padding-left: 0px;
+}
+    
+/* SKILL SECTION */
+.skill-bar{
+    margin-top: 50px;
+    }
+
+/* PORTFOLIO SECTION */
+.portfolio-menu ul{
+    
+}
+.portfolio-menu ul li {
+    font-size: 12px;
+    margin-left: 6px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.portfolio-overlay a {
+    font-size: 18px;
+    height: 30px;
+    margin-left: 5px;
+    width: 30px;
+}
+.mfp-close-btn-in .mfp-close {
+    font-size: 25px;
+    height: 30px;
+    line-height: 30px;
+    right: -5px;
+    top: -10px;
+    width: 30px;
+}
+    
+    
+/* REVIEW SECTION */
+ .review-full-area {
+    
+}
+    .single-review {
+  padding: 100px 0 0;
+}
+
+.single-review p{
+    font-size: 16px;
+    }
+
+.owl-carousel {
+    z-index: 0;
+}
+
+    
+/* CONTACT INFO SECTION */
+form textarea{
+    height: 150px;
+    resize:none;
+}
+form input[type="submit"] {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 6px 20px;
+}
+    
+
+/* FOOTER SECTION */
+.footer{
+    padding: 10px 0;
+}
+.footer-text P{
+    font-size: 12px;
+    }
+    
+    
+}
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+  
+    
+}
+
+

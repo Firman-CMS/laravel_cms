@@ -2,7 +2,7 @@
 
 namespace LaravelCms\Http\Controllers\Auth;
 
-use LaravelCms\User;
+use LaravelCms\m_user;
 use Validator;
 use LaravelCms\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -28,6 +28,11 @@ class AuthController extends Controller
      *
      * @return void
      */
+
+    protected $redirectAfterLogout = 'auth/login';
+    protected $redirectTo = '/contact';
+
+
     public function __construct()
     {
         $this->middleware('guest', ['except' => 'getLogout']);
@@ -56,10 +61,11 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        return m_user::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+
     }
 }
